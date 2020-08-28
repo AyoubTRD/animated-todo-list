@@ -50,7 +50,11 @@ function TodoCreate({ setTodos, todos }) {
             onBlur={unfocus}
           />
         </div>
-        <button type="submit" className={todo ? "" : "disabled"}>
+        <button
+          type="submit"
+          className={todo ? "" : "disabled"}
+          onClick={handleSubmit}
+        >
           Add
         </button>
       </form>
