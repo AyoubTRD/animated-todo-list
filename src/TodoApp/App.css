@@ -157,6 +157,10 @@ h2 {
   padding: 0 20px;
 }
 
+.todo-create.focus button {
+  pointer-events: all;
+}
+
 .todo-create.focus,
 .created-todo .todo {
   transform: scale(1.05);
@@ -250,7 +254,7 @@ h2 {
 
 button.disabled {
   color: rgba(110, 110, 110, 0.25);
-  pointer-events: none;
+  pointer-events: none !important;
   cursor: default;
 }
 
